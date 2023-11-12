@@ -1,13 +1,14 @@
 CREATE EXTENSION pgcrypto;
 CREATE TABLE users (
-  user_email varchar(250) NOT NULL, 
+  id serial NOT NULL,
+  user_email varchar(250) NOT NULL UNIQUE, 
   user_password varchar(250) NOT NULL, 
-  user_name varchar(250) NOT NULL, 
+  user_name varchar(250) NOT NULL UNIQUE, 
   user_type varchar(8) NOT NULL, 
-  document_id varchar(14) NOT NULL, 
+  document_id varchar(14) NOT NULL UNIQUE, 
   user_address varchar(250) NOT NULL, 
-  user_phone bigint NOT NULL, 
-  PRIMARY KEY (user_email)
+  user_phone bigint NOT NULL UNIQUE, 
+  PRIMARY KEY (id)
 );
 INSERT INTO users (
   user_email, user_password, user_name, 
