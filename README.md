@@ -1,6 +1,6 @@
 # Banco de Dados 🗃️
 
-> O banco de dados é contruído em [PostgreSQL](https://www.postgresql.org/download/) e hospedado na [Google Cloud Platform](https://cloud.google.com/?hl=pt-br).
+> O banco de dados é contruído no [PostgreSQL](https://www.postgresql.org/download/) e implantado na [DigitalOcean](https://www.digitalocean.com/).
 
 ## 🔎 Como utilizar
 
