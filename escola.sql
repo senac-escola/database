@@ -17,14 +17,50 @@ INSERT INTO users (
 ) 
 VALUES 
   (
-    'adrian@hotmail.com', 
+    'maria@escola.com', 
     crypt(
-      'teste123', 
+      'Teste123', 
       gen_salt('bf')
     ), 
-    'Adrian', 
+    'Maria', 
     'manager', 
     12345678900, 
     'Rua dos bobos, 0', 
     11912345678
+  ),
+  (
+    'fernanda@escola.com', 
+    crypt(
+      'Senha123', 
+      gen_salt('bf')
+    ), 
+    'Fernanda', 
+    'teacher', 
+    12345678910, 
+    'Rua dos bobos, 0', 
+    11912345679
+  ),
+  (
+    'henrique@hotmail.com', 
+    crypt(
+      'Aluno123', 
+      gen_salt('bf')
+    ), 
+    'Henrique', 
+    'student', 
+    12345678911, 
+    'Rua dos bobos, 0', 
+    11912345670
+  ),
+  (
+    'joao@papelaria.com', 
+    crypt(
+      'Papelaria123', 
+      gen_salt('bf')
+    ), 
+    'João', 
+    'supplier', 
+    12345678000122, 
+    'Rua dos bobos, 0', 
+    11912345671
   );
